@@ -1,0 +1,25 @@
+         case OP_RETURN:
+            goto execFinished;
+
+         case OP_LOADVAR_UINT:
+            intStack[UINT+1] = gEvalState.getIntVariable();
+            UINT++;
+            break;
+
+         case OP_LOADVAR_FLT:
+            floatStack[FLT+1] = gEvalState.getFloatVariable();
+            FLT++;
+            break;
+
+         case OP_LOADVAR_STR:
+            val = gEvalState.getStringVariable();
+            STR.setStringValue(val);
+            break;
+
+         case OP_STR_TO_NONE:
+            // This exists simply to deal with certain typecast situations.
+            break;
+         case OP_PUSH:
+            STR.push();
+            break;
+         case OP_INVALID:

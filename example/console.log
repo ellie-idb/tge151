@@ -1,0 +1,236 @@
+//-------------------------- 6/12/2013 -- 17:05:15 -----
+Processor Init:
+   AMD (unknown), ~2.80 Ghz
+     (timed at roughly 2.83 Ghz)
+   FPU detected
+   MMX detected
+   3DNow detected
+   SSE detected
+ 
+Math Init:
+   Installing Standard C extensions
+   Installing Assembly extensions
+   Installing FPU extensions
+   Installing MMX extensions
+   Installing 3DNow extensions
+   Installing SSE extensions
+ 
+Input Init:
+   keyboard0 input device created.
+   mouse0 input device created.
+   DirectInput enabled.
+
+Initializing chunk mappings...
+   o 'TEXT' maps to TextChunk
+   o 'SCHK' maps to UnknownChunk
+   o 'SCHK' maps to SimChunk
+--------- Loading MODS ---------
+Compiling tutorial.base/main.cs...
+Loading compiled script tutorial.base/main.cs.
+Loading compiled script common/main.cs.
+Compiling tutorial.base/client/defaults.cs...
+Loading compiled script tutorial.base/client/defaults.cs.
+Compiling tutorial.base/server/defaults.cs...
+Loading compiled script tutorial.base/server/defaults.cs.
+Missing file: tutorial.base/prefs.cs!
+Loading compiled script creator/main.cs.
+Loading compiled script common/main.cs.
+
+--------- Parsing Arguments ---------
+
+--------- Initializing MOD: Common ---------
+Loading compiled script common/client/canvas.cs.
+Loading compiled script common/client/audio.cs.
+
+--------- Initializing TTB: Server ---------
+Loading compiled script common/server/audio.cs.
+Loading compiled script common/server/server.cs.
+Loading compiled script common/server/message.cs.
+Loading compiled script common/server/commands.cs.
+Loading compiled script common/server/missionInfo.cs.
+Loading compiled script common/server/missionLoad.cs.
+Loading compiled script common/server/missionDownload.cs.
+Loading compiled script common/server/clientConnection.cs.
+Loading compiled script common/server/kickban.cs.
+Loading compiled script common/server/game.cs.
+Compiling tutorial.base/server/game.cs...
+Loading compiled script tutorial.base/server/game.cs.
+
+--------- Initializing TTB: Client ---------
+Loading compiled script common/client/message.cs.
+Loading compiled script common/client/mission.cs.
+Loading compiled script common/client/missionDownload.cs.
+Loading compiled script common/client/actionMap.cs.
+Video Init:
+   Accelerated OpenGL display device detected.
+   Accelerated D3D device detected.
+   Voodoo 2 display device not detected.
+
+Activating the OpenGL display device...
+Activating the OpenGL display device...
+Setting screen mode to 800x600x32 (w)...
+Creating a new window...
+Acquiring a new device context...
+Pixel format set:
+  32 color bits, 24 depth bits, 8 stencil bits
+Creating a new rendering context...
+Making the new rendering context current...
+OpenGL driver information:
+  Vendor: ATI Technologies Inc.
+  Renderer: ATI Radeon HD 4800 Series
+  Version: 3.3.11672 Compatibility Profile Context
+OpenGL Init: Enabled Extensions
+  ARB_multitexture (Max Texture Units: 8)
+  EXT_blend_color
+  EXT_blend_minmax
+  EXT_compiled_vertex_array
+  EXT_texture_env_combine
+  EXT_packed_pixels
+  EXT_fog_coord
+  ARB_texture_compression
+  EXT_texture_compression_s3tc
+  (ARB|EXT)_texture_env_add
+  EXT_texture_filter_anisotropic (Max anisotropy: 16)
+  WGL_EXT_swap_control
+OpenGL Init: Disabled Extensions
+  EXT_paletted_texture
+  NV_vertex_array_range
+  3DFX_texture_compression_FXT1
+
+Loading compiled script common/ui/defaultProfiles.cs.
+Loading compiled script common/ui/ConsoleDlg.gui.
+Loading compiled script common/ui/LoadFileDlg.gui.
+Loading compiled script common/ui/ColorPickerDlg.gui.
+Loading compiled script common/ui/SaveFileDlg.gui.
+Loading compiled script common/ui/MessageBoxOkDlg.gui.
+Loading compiled script common/ui/MessageBoxYesNoDlg.gui.
+Loading compiled script common/ui/MessageBoxOKCancelDlg.gui.
+Loading compiled script common/ui/MessagePopupDlg.gui.
+Loading compiled script common/ui/HelpDlg.gui.
+Loading compiled script common/ui/RecordingsDlg.gui.
+Loading compiled script common/ui/NetGraphGui.gui.
+Loading compiled script common/client/metrics.cs.
+Loading compiled script common/ui/FrameOverlayGui.gui.
+Loading compiled script common/client/messageBox.cs.
+Loading compiled script common/client/screenshot.cs.
+Loading compiled script common/client/cursor.cs.
+Loading compiled script common/client/help.cs.
+Loading compiled script common/client/recordings.cs.
+
+OpenAL Driver Init:
+OpenAL
+   Vendor: Creative Labs Inc.
+   Version: 1.1
+   Renderer: Software
+   Extensions: EAX EAX2.0 EAX3.0 EAX4.0 EAX5.0 EAX3.0EMULATED EAX4.0EMULATED AL_EXT_OFFSET AL_EXT_LINEAR_DISTANCE AL_EXT_EXPONENT_DISTANCE
+
+Compiling tutorial.base/client/audioProfiles.cs...
+Loading compiled script tutorial.base/client/audioProfiles.cs.
+Compiling tutorial.base/client/ui/PlayGui.gui...
+Loading compiled script tutorial.base/client/ui/PlayGui.gui.
+Compiling tutorial.base/client/ui/mainMenuGui.gui...
+Loading compiled script tutorial.base/client/ui/mainMenuGui.gui.
+Compiling tutorial.base/client/ui/optionsDlg.gui...
+Loading compiled script tutorial.base/client/ui/optionsDlg.gui.
+Compiling tutorial.base/client/ui/loadingGui.gui...
+Loading compiled script tutorial.base/client/ui/loadingGui.gui.
+Compiling tutorial.base/client/optionsDlg.cs...
+Loading compiled script tutorial.base/client/optionsDlg.cs.
+Compiling tutorial.base/client/missionDownload.cs...
+Loading compiled script tutorial.base/client/missionDownload.cs.
+Compiling tutorial.base/client/serverConnection.cs...
+Loading compiled script tutorial.base/client/serverConnection.cs.
+Compiling tutorial.base/client/loadingGui.cs...
+Loading compiled script tutorial.base/client/loadingGui.cs.
+Compiling tutorial.base/client/playGui.cs...
+Loading compiled script tutorial.base/client/playGui.cs.
+Compiling tutorial.base/client/default.bind.cs...
+Loading compiled script tutorial.base/client/default.bind.cs.
+Could not locate texture: tutorial.base/client/ui/buttons/exit
+Could not locate texture: tutorial.base/client/ui/buttons/exit_d
+Could not locate texture: tutorial.base/client/ui/buttons/exit_i
+Could not locate texture: tutorial.base/client/ui/buttons/forum
+Could not locate texture: tutorial.base/client/ui/buttons/forum_d
+Could not locate texture: tutorial.base/client/ui/buttons/forum_i
+Could not locate texture: tutorial.base/client/ui/buttons/options
+Could not locate texture: tutorial.base/client/ui/buttons/options_d
+Could not locate texture: tutorial.base/client/ui/buttons/options_i
+Could not locate texture: tutorial.base/client/ui/buttons/gui
+Could not locate texture: tutorial.base/client/ui/buttons/gui_d
+Could not locate texture: tutorial.base/client/ui/buttons/gui_i
+Could not locate texture: tutorial.base/client/ui/buttons/map
+Could not locate texture: tutorial.base/client/ui/buttons/map_d
+Could not locate texture: tutorial.base/client/ui/buttons/map_i
+Could not locate texture: tutorial.base/client/ui/buttons/news
+Could not locate texture: tutorial.base/client/ui/buttons/news_d
+Could not locate texture: tutorial.base/client/ui/buttons/news_i
+Could not locate texture: tutorial.base/client/ui/buttons/help
+Could not locate texture: tutorial.base/client/ui/buttons/help_d
+Could not locate texture: tutorial.base/client/ui/buttons/help_i
+Could not locate texture: tutorial.base/client/ui/buttons/tdn
+Could not locate texture: tutorial.base/client/ui/buttons/tdn_d
+Could not locate texture: tutorial.base/client/ui/buttons/tdn_i
+Could not locate texture: tutorial.base/client/ui/buttons/console
+Could not locate texture: tutorial.base/client/ui/buttons/console_d
+Could not locate texture: tutorial.base/client/ui/buttons/console_i
+Could not locate texture: tutorial.base/client/ui/buttons/tutorial
+Could not locate texture: tutorial.base/client/ui/buttons/tutorial_d
+Could not locate texture: tutorial.base/client/ui/buttons/tutorial_i
+
+--------- Initializing: Torque Creator ---------
+Loading compiled script creator/editor/editor.cs.
+Loading compiled script creator/editor/particleEditor.cs.
+Loading compiled script creator/scripts/scriptDoc.cs.
+Loading compiled script creator/ui/creatorProfiles.cs.
+Loading compiled script creator/ui/InspectDlg.gui.
+Loading compiled script creator/ui/GuiEditorGui.gui.
+Loading compiled script creator/ui/lightEditor.gui.
+Loading compiled script creator/ui/lightEditorNewDB.gui.
+Engine initialized...
+RSS Feed
+   - Requesting RSS data at URL: /garagegames/rss/product/tge/oobe
+   - Got 18 lines.
+   - Feed title: ''
+   - Feed link:  ''
+   - Headline      #0 : ''
+   - Headline Link #0 : ''
+   - Headline      #1 : ''
+   - Headline Link #1 : ''
+   - Headline      #2 : ''
+   - Headline Link #2 : ''
+==>containerRaycast();
+<input> (0): ::containerRayCast - wrong number of arguments.
+<input> (0): usage: ( Point3F start, Point3F end, bitset mask, SceneObject exempt=NULL )Cast a ray from start to end, checking for collision against items matching mask.
+
+If exempt is specified, then it is temporarily excluded from collision checks (For instance, you might want to exclude the player if said player was firing a weapon.)
+@returns A string containing either null, if nothing was struck, or these fields:
+            - The ID of the object that was struck.
+            - The x, y, z position that it was struck.
+            - The x, y, z of the normal of the face that was struck.
+==>containerRaycast();
+<input> (0): ::containerRayCast - wrong number of arguments.
+<input> (0): usage: ( Point3F start, Point3F end, bitset mask, SceneObject exempt=NULL )Cast a ray from start to end, checking for collision against items matching mask.
+
+If exempt is specified, then it is temporarily excluded from collision checks (For instance, you might want to exclude the player if said player was firing a weapon.)
+@returns A string containing either null, if nothing was struck, or these fields:
+            - The ID of the object that was struck.
+            - The x, y, z position that it was struck.
+            - The x, y, z of the normal of the face that was struck.
+==>containerRaycast();
+<input> (0): ::containerRayCast - wrong number of arguments.
+<input> (0): usage: ( Point3F start, Point3F end, bitset mask, SceneObject exempt=NULL )Cast a ray from start to end, checking for collision against items matching mask.
+
+If exempt is specified, then it is temporarily excluded from collision checks (For instance, you might want to exclude the player if said player was firing a weapon.)
+@returns A string containing either null, if nothing was struck, or these fields:
+            - The ID of the object that was struck.
+            - The x, y, z position that it was struck.
+            - The x, y, z of the normal of the face that was struck.
+==>echo(a);
+a
+Exporting prefs
+Exporting client prefs
+Exporting server prefs
+Shutting down the OpenGL display device...
+Making the GL rendering context not current...
+Deleting the GL rendering context...
+Releasing the device context...

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>max2dtsExporterPro Max7</ProjectName>
+    <ProjectGuid>{06E999B3-F437-41E6-BE21-FBBE245ACC96}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\../tools/out.VC8.DEBUG\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\../tools/out.VC8.DEBUG/max2dtsExporterPro_Max7\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\../tools/out.VC8.RELEASE\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\../tools/out.VC8.RELEASE/max2dtsExporterPro_Max7\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\DEBUG/max2dtsExporterPlus_Max7.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/LD  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\lib\maxsdk70\include;..\lib\dtsSDK;..\lib\dtsSDKPlus;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\../tools/out.VC8.DEBUG/max2dtsExporterPlus/max2dtsExporterPro_Max7.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\../tools/out.VC8.DEBUG/max2dtsExporterPro_Max7/</AssemblerListingLocation>
+      <ObjectFileName>.\../tools/out.VC8.DEBUG/max2dtsExporterPro_Max7/</ObjectFileName>
+      <ProgramDataBaseFileName>.\../tools/out.VC8.DEBUG/max2dtsExporterPro_Max7/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/DEF:../tools/max2dtsExporterPro/max2dtsExporterPro.def %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dtsSDK_DEBUG.lib;dtsSDKPlus_DEBUG.lib;user32.lib;comctl32.lib;core.lib;geom.lib;gfx.lib;mesh.lib;maxutil.lib;maxscrpt.lib;paramblk2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../tools/max2dtsExporterPro_DEBUG.dle</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\lib\maxsdk70\lib;..\lib\out.VC8.DEBUG;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>..\tools\max2dtsExporterPro_Max7.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\../tools/out.VC8.DEBUG/max2dtsExporterPro_Max7.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <BaseAddress>0x160000</BaseAddress>
+      <ImportLibrary>.\../tools/out.VC8.DEBUG/max2dtsExporterPro_Max7.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\RELEASE/max2dtsExporterPlus/max2dtsExporterPlus_Max7.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/LD  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\lib\maxsdk70\include;..\lib\dtsSDK;..\lib\dtsSDKPlus;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\../tools/out.VC8.RELEASE/max2dtsExporterPro/max2dtsExporterPro_Max7.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\../tools/out.VC8.RELEASE/max2dtsExporterPro_Max7/</AssemblerListingLocation>
+      <ObjectFileName>.\../tools/out.VC8.RELEASE/max2dtsExporterPro_Max7/</ObjectFileName>
+      <ProgramDataBaseFileName>.\../tools/out.VC8.RELEASE/max2dtsExporterPro_Max7/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/DEF:../tools/max2dtsExporterPro/max2dtsExporterPro.def %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dtsSDK.lib;dtsSDKPlus.lib;user32.lib;comctl32.lib;core.lib;geom.lib;gfx.lib;mesh.lib;maxutil.lib;maxscrpt.lib;paramblk2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../tools/max2dtsExporterPro.dle</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../lib/maxsdk70/lib;../lib/out.VC8.RELEASE;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>..\tools\max2dtsExporterPro_Max7.def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>.\../tools/out.VC8.RELEASE/max2dtsExporterPro/max2dtsExporterPro_Max7.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <SetChecksum>true</SetChecksum>
+      <BaseAddress>0x160000</BaseAddress>
+      <ImportLibrary>.\../tools/out.VC8.RELEASE/max2dtsExporterPro/max2dtsExporterPro_Max7.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\tools\max2dtsExporterPro\DllEntry.cpp" />
+    <ClCompile Include="..\tools\max2dtsExporterPro\max2dtsExporterPro.cpp" />
+    <ClCompile Include="..\tools\max2dtsExporterPro\maxAppMesh.cpp" />
+    <ClCompile Include="..\tools\max2dtsExporterPro\maxAppNode.cpp" />
+    <ClCompile Include="..\tools\max2dtsExporterPro\maxSceneEnum.cpp" />
+    <ClCompile Include="..\tools\max2dtsExporterPro\skinHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\tools\max2dtsExporterPro\max2dtsExporterPro.h" />
+    <ClInclude Include="..\tools\max2dtsExporterPro\maxAppMesh.h" />
+    <ClInclude Include="..\tools\max2dtsExporterPro\maxAppNode.h" />
+    <ClInclude Include="..\tools\max2dtsExporterPro\maxSceneEnum.h" />
+    <ClInclude Include="..\tools\max2dtsExporterPro\resource.h" />
+    <ClInclude Include="..\tools\max2dtsExporterPro\skinHelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\tools\max2dtsExporterPro\max2dtsExporterPro.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\tools\max2dtsExporterPro\max2dtsExporterPro.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="dtsSDK.vcxproj">
+      <Project>{7826c608-628d-4e8e-809f-b466abe74f00}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dtsSDKPlus.vcxproj">
+      <Project>{91e7c69d-603f-4982-b76a-a03334609110}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
