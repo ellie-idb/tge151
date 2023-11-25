@@ -2379,7 +2379,7 @@ bool OpenALInit()
      deviceSpecifier = "'((devices '(sdl)))";
    mDevice = (ALCdevice *)alcOpenDevice((ALubyte*)deviceSpecifier);
 #else
-   mDevice = (ALCdevice *)alcOpenDevice((ALubyte*)NULL);
+   mDevice = (ALCdevice *)alcOpenDevice((const ALCchar*)NULL);
 #endif
    if (mDevice == (ALCdevice *)NULL)
       return false;
