@@ -666,8 +666,8 @@ static void getSourceDestByteFormat(GBitmap *pBitmap, U32 *sourceFormat, U32 *de
    {
       if (*sourceFormat != GL_COLOR_INDEX)
          *destFormat = *sourceFormat;
-      else
-         *destFormat = GL_COLOR_INDEX8_EXT;
+      // else
+      //    *destFormat = GL_COLOR_INDEX8_EXT;
 
       if (pBitmap->getNumMipLevels() > 1 &&
           pBitmap->getFormat() != GBitmap::Palettized &&
