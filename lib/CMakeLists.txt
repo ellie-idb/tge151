@@ -1,0 +1,11 @@
+add_subdirectory(lpng)
+add_subdirectory(zlib)
+set(ALSOFT_EAX TRUE)
+add_subdirectory(openal-soft)
+add_subdirectory(vorbis)
+add_subdirectory(ljpeg)
+add_subdirectory(lungif)
+
+if (WIN32)
+  add_subdirectory(opengl2d3d)
+endif()
