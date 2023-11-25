@@ -724,17 +724,17 @@ void Projectile::updateSound()
    if (!mDataBlock->sound)
       return;
 
-   if (mHidden && mSoundHandle != NULL_AUDIOHANDLE)
-   {
-      alxStop(mSoundHandle);
-      mSoundHandle = NULL_AUDIOHANDLE;
-   }
-   else if(!mHidden)
-   {
-      if (mSoundHandle == NULL_AUDIOHANDLE)
-         mSoundHandle = alxPlay(mDataBlock->sound, &getRenderTransform(), &getPosition());
-      alxSourceMatrixF(mSoundHandle, &getRenderTransform());
-   }
+   // if (mHidden && mSoundHandle != NULL_AUDIOHANDLE)
+   // {
+   //    alxStop(mSoundHandle);
+   //    mSoundHandle = NULL_AUDIOHANDLE;
+   // }
+   // else if(!mHidden)
+   // {
+   //    if (mSoundHandle == NULL_AUDIOHANDLE)
+   //       mSoundHandle = alxPlay(mDataBlock->sound, &getRenderTransform(), &getPosition());
+   //    alxSourceMatrixF(mSoundHandle, &getRenderTransform());
+   // }
 }
 
 Point3F Projectile::getVelocity() const
