@@ -2163,8 +2163,8 @@ void TerrainRender::renderBlock(TerrainBlock *block, SceneState *state)
 
                if(vertexBuffer)
                   glSetVertexBufferEXT(block->mVertexBuffer);
-               if(lockArrays)
-                  glLockArraysEXT(0, mXFPointCount);
+               // if(lockArrays)
+                  // glLockArraysEXT(0, mXFPointCount);
                // lock the array
                PROFILE_END();
                PROFILE_START(TerrainRenderXFRender);
@@ -2225,8 +2225,8 @@ void TerrainRender::renderBlock(TerrainBlock *block, SceneState *state)
                   PROFILE_END();
                }
 
-               if(lockArrays)
-                  glUnlockArraysEXT();
+               // if(lockArrays)
+                  // glUnlockArraysEXT();
             }
          }
          AllocatedTexture *nextStep = step->nextLink;

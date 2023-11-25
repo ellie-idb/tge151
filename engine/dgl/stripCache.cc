@@ -39,8 +39,8 @@ void StripCache::flushCache()
 
    stripStarts[currStrip] = currIndex;
 
-   if (dglDoesSupportCompiledVertexArray())
-      glLockArraysEXT(first, last - first + 1);
+   // if (dglDoesSupportCompiledVertexArray())
+      // glLockArraysEXT(first, last - first + 1);
 
    for (U32 i = 0; i < currStrip; i++) {
       glColor4ubv(stripColors[i]);
@@ -48,8 +48,8 @@ void StripCache::flushCache()
                      GL_UNSIGNED_INT, &stripIndices[stripStarts[i]]);
    }
 
-   if (dglDoesSupportCompiledVertexArray())
-      glUnlockArraysEXT();
+   // if (dglDoesSupportCompiledVertexArray())
+      // glUnlockArraysEXT();
 
    currIndex = 0;
    currStrip = 0;

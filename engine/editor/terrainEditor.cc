@@ -801,8 +801,8 @@ void TerrainEditor::renderSelection( const Selection & sel, const ColorF & inCol
    glEnableClientState(GL_COLOR_ARRAY);
    glColorPointer(4, GL_UNSIGNED_BYTE, sizeof(TerrVertex), &(vertexBuffer[0].color));
 
-   if (dglDoesSupportCompiledVertexArray())
-        glLockArraysEXT(0, vertexBuffer.size());
+   // if (dglDoesSupportCompiledVertexArray())
+   //      glLockArraysEXT(0, vertexBuffer.size());
 
    glDisable(GL_CULL_FACE);
    glEnable(GL_BLEND);
@@ -817,8 +817,8 @@ void TerrainEditor::renderSelection( const Selection & sel, const ColorF & inCol
       for(U32 i = 0; i < sel.size(); i++)
          glDrawArrays(GL_LINE_LOOP, i * 4, 4);
 
-   if (dglDoesSupportCompiledVertexArray())
-      glUnlockArraysEXT();
+   // if (dglDoesSupportCompiledVertexArray())
+      // glUnlockArraysEXT();
 
    glDisableClientState(GL_VERTEX_ARRAY);
    glDisableClientState(GL_COLOR_ARRAY);

@@ -139,7 +139,7 @@ void fluid::Render( bool& EyeSubmerged )
 	if (m_UseDepthMap && dglDoesSupportARBMultitexture())
 	{
 		// Lock Arrays.
-		if (dglDoesSupportCompiledVertexArray()) glLockArraysEXT(0, m_VUsed);
+		// if (dglDoesSupportCompiledVertexArray()) glLockArraysEXT(0, m_VUsed);
 
 		m_Opacity = 1.0f;
 

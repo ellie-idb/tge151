@@ -261,9 +261,9 @@ void flushPrimitives(const U32* indices,
 
    if (Interior::smLockArrays && dglDoesSupportCompiledVertexArray())
    {
-      glLockArraysEXT(0, vcount);
+      // glLockArraysEXT(0, vcount);
       glDrawElements(GL_TRIANGLES, count, GL_UNSIGNED_INT, indices);
-      glUnlockArraysEXT();
+      // glUnlockArraysEXT();
    } else {
       glDrawElements(GL_TRIANGLES, count, GL_UNSIGNED_INT, indices);
    }
@@ -281,9 +281,9 @@ void flushPrimitivesVB(const U32* indices,
 
    if (Interior::smLockArrays && dglDoesSupportCompiledVertexArray())
    {
-      glLockArraysEXT(0, vcount);
+      // glLockArraysEXT(0, vcount);
       glDrawElements(GL_TRIANGLES, count, GL_UNSIGNED_INT, indices);
-      glUnlockArraysEXT();
+      // glUnlockArraysEXT();
    } else {
       glDrawElements(GL_TRIANGLES, count, GL_UNSIGNED_INT, indices);
    }
@@ -577,14 +577,14 @@ void Interior::render_vc_tf(const bool useAlarmLighting, MaterialList* pMaterial
       glEnable(GL_POLYGON_OFFSET_FILL);
       glPolygonOffset(-1,-1);
 
-      if (dglDoesSupportCompiledVertexArray())
-         glLockArraysEXT(0, mPoints.size());
+      // if (dglDoesSupportCompiledVertexArray())
+         // glLockArraysEXT(0, mPoints.size());
       for (U32 i = 0; i < sgActivePolyListSize; i++) {
          const Surface& rSurface = mSurfaces[sgActivePolyList[i]];
          glDrawElements(GL_TRIANGLE_STRIP, rSurface.windingCount, GL_UNSIGNED_INT, &mWindings[rSurface.windingStart]);
       }
-      if (dglDoesSupportCompiledVertexArray())
-         glUnlockArraysEXT();
+      // if (dglDoesSupportCompiledVertexArray())
+         // glUnlockArraysEXT();
 
       glDisable(GL_POLYGON_OFFSET_FILL);
    }
@@ -954,8 +954,8 @@ void Interior::renderARB_vc_tf(const bool useAlarmLighting, MaterialList* pMater
                   gInteriorFogColor.blue,
                   1.0);
 
-      if (dglDoesSupportCompiledVertexArray())
-         glLockArraysEXT(0, mPoints.size());
+      // if (dglDoesSupportCompiledVertexArray())
+         // glLockArraysEXT(0, mPoints.size());
 
       for (U32 i = 0; i < sgActivePolyListSize; i++)
       {
@@ -963,8 +963,8 @@ void Interior::renderARB_vc_tf(const bool useAlarmLighting, MaterialList* pMater
          glDrawElements(GL_TRIANGLE_STRIP, rSurface.windingCount, GL_UNSIGNED_INT, &mWindings[rSurface.windingStart]);
       }
 
-      if (dglDoesSupportCompiledVertexArray())
-         glUnlockArraysEXT();
+      // if (dglDoesSupportCompiledVertexArray())
+         // glUnlockArraysEXT();
 
       glActiveTextureARB(GL_TEXTURE1_ARB);
       glEnable(GL_TEXTURE_2D);
@@ -1113,14 +1113,14 @@ void Interior::renderARB(const bool useAlarmLighting, MaterialList* pMaterials, 
                 gInteriorFogColor.blue,
                 1);
 
-      if (dglDoesSupportCompiledVertexArray())
-         glLockArraysEXT(0, mPoints.size());
+      // if (dglDoesSupportCompiledVertexArray())
+         // glLockArraysEXT(0, mPoints.size());
       for (U32 i = 0; i < sgActivePolyListSize; i++) {
          const Surface& rSurface = mSurfaces[sgActivePolyList[i]];
          glDrawElements(GL_TRIANGLE_STRIP, rSurface.windingCount, GL_UNSIGNED_INT, &mWindings[rSurface.windingStart]);
       }
-      if (dglDoesSupportCompiledVertexArray())
-         glUnlockArraysEXT();
+      // if (dglDoesSupportCompiledVertexArray())
+         // glUnlockArraysEXT();
 
       glActiveTextureARB(GL_TEXTURE1_ARB);
       glEnable(GL_TEXTURE_2D);
@@ -1691,15 +1691,15 @@ void Interior::renderAsShape()
          gInteriorFogColor.blue,
          1.0f);
 
-      if (dglDoesSupportCompiledVertexArray())
-         glLockArraysEXT(0, mPoints.size());
+      // if (dglDoesSupportCompiledVertexArray())
+         // glLockArraysEXT(0, mPoints.size());
       for (U32 i = 0; i < sgActivePolyListSize; i++)
       {
          const Surface& rSurface = mSurfaces[sgActivePolyList[i]];
          glDrawElements(GL_TRIANGLE_STRIP, rSurface.windingCount, GL_UNSIGNED_INT, &mWindings[rSurface.windingStart]);
       }
-      if (dglDoesSupportCompiledVertexArray())
-         glUnlockArraysEXT();
+      // if (dglDoesSupportCompiledVertexArray())
+         // glUnlockArraysEXT();
 
       glActiveTextureARB(GL_TEXTURE1_ARB);
       glEnable(GL_TEXTURE_2D);

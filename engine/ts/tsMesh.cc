@@ -246,8 +246,8 @@ void TSMesh::renderVB(S32 frame, S32 matFrame, TSMaterialList *materials)
 
    // lock...
    bool lockArrays = dglDoesSupportCompiledVertexArray();
-   if (lockArrays)
-      glLockArraysEXT(0,vertsPerFrame);
+   // if (lockArrays)
+      // glLockArraysEXT(0,vertsPerFrame);
 
    for (S32 i=0; i<primitives.size(); i++)
    {
@@ -271,8 +271,8 @@ void TSMesh::renderVB(S32 frame, S32 matFrame, TSMaterialList *materials)
    }
 
    // unlock...
-   if (lockArrays)
-      glUnlockArraysEXT();
+   // if (lockArrays)
+      // glUnlockArraysEXT();
 
    glDisable(GL_NORMALIZE);
 }
@@ -323,8 +323,8 @@ void TSMesh::render(S32 frame, S32 matFrame, TSMaterialList * materials)
 
    // lock...
    bool lockArrays = dglDoesSupportCompiledVertexArray();
-   if (lockArrays)
-      glLockArraysEXT(0,vertsPerFrame);
+   // if (lockArrays)
+      // glLockArraysEXT(0,vertsPerFrame);
 
    for (S32 i=0; i<primitives.size(); i++)
    {
@@ -343,8 +343,8 @@ void TSMesh::render(S32 frame, S32 matFrame, TSMaterialList * materials)
    }
 
    // unlock...
-   if (lockArrays)
-      glUnlockArraysEXT();
+   // if (lockArrays)
+      // glUnlockArraysEXT();
 
    restoreMergeNormals();
 
@@ -1185,8 +1185,8 @@ void TSMesh::renderEnvironmentMap(S32 frame, S32 matFrame, TSMaterialList * mate
 
    // lock...
    bool lockArrays = dglDoesSupportCompiledVertexArray();
-   if (lockArrays)
-      glLockArraysEXT(0,vertsPerFrame);
+   // if (lockArrays)
+      // glLockArraysEXT(0,vertsPerFrame);
 
    S32 matIndex = -1;
 
@@ -1222,8 +1222,8 @@ void TSMesh::renderEnvironmentMap(S32 frame, S32 matFrame, TSMaterialList * mate
    }
 
    // unlock...
-   if (lockArrays)
-      glUnlockArraysEXT();
+   // if (lockArrays)
+      // glUnlockArraysEXT();
 }
 
 void TSMesh::initEnvironmentMapMaterials()
@@ -1306,8 +1306,8 @@ void TSMesh::renderDetailMap(S32 frame, S32 matFrame, TSMaterialList * materials
 
    // lock...
    bool lockArrays = dglDoesSupportCompiledVertexArray();
-   if (lockArrays)
-      glLockArraysEXT(0,vertsPerFrame);
+   // if (lockArrays)
+      // glLockArraysEXT(0,vertsPerFrame);
 
    S32 matIndex = -1;
 
@@ -1353,8 +1353,8 @@ void TSMesh::renderDetailMap(S32 frame, S32 matFrame, TSMaterialList * materials
    }
 
    // unlock...
-   if (lockArrays)
-      glUnlockArraysEXT();
+   // if (lockArrays)
+      // glUnlockArraysEXT();
 }
 
 void TSMesh::initDetailMapMaterials()
@@ -1430,8 +1430,8 @@ void TSMesh::renderLightMap(S32 frame, S32 matFrame, TSMaterialList * materials)
 
    // lock...
    bool lockArrays = dglDoesSupportCompiledVertexArray();
-   if (lockArrays)
-      glLockArraysEXT(0,vertsPerFrame);
+   // if (lockArrays)
+      // glLockArraysEXT(0,vertsPerFrame);
 
    S32 matIndex = -1;
 
@@ -1464,8 +1464,8 @@ void TSMesh::renderLightMap(S32 frame, S32 matFrame, TSMaterialList * materials)
    }
 
    // unlock...
-   if (lockArrays)
-      glUnlockArraysEXT();
+   // if (lockArrays)
+      // glUnlockArraysEXT();
 }
 
 void TSMesh::initLightMapMaterials()
@@ -1582,8 +1582,8 @@ void TSMesh::renderFog(S32 frame, TSMaterialList* materials)
 
    // lock...
    bool lockArrays = dglDoesSupportCompiledVertexArray();
-   if (lockArrays)
-      glLockArraysEXT(0,vertsPerFrame);
+   // if (lockArrays)
+      // glLockArraysEXT(0,vertsPerFrame);
 
    for (S32 i=0; i<primitives.size(); i++)
    {
@@ -1596,8 +1596,8 @@ void TSMesh::renderFog(S32 frame, TSMaterialList* materials)
    }
 
    // unlock...
-   if (lockArrays)
-      glUnlockArraysEXT();
+   // if (lockArrays)
+      // glUnlockArraysEXT();
 }
 
 //-----------------------------------------------------

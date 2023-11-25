@@ -74,8 +74,8 @@ void TSSortedMesh::render(S32 frame, S32 matFrame, TSMaterialList * materials)
 
    // lock...
    bool lockArrays = dglDoesSupportCompiledVertexArray();
-   if (lockArrays)
-      glLockArraysEXT(0,vertCount);
+   // if (lockArrays)
+      // glLockArraysEXT(0,vertCount);
 
    if (alwaysWriteDepth)
       glDepthMask(GL_TRUE);
@@ -114,8 +114,8 @@ void TSSortedMesh::render(S32 frame, S32 matFrame, TSMaterialList * materials)
    } while (nextCluster>=0);
 
    // unlock...
-   if (lockArrays)
-      glUnlockArraysEXT();
+   // if (lockArrays)
+      // glUnlockArraysEXT();
 
    if ((TSShapeInstance::smRenderData.materialFlags & TSMaterialList::Translucent) && alwaysWriteDepth)
       glDepthMask(GL_FALSE);
@@ -145,8 +145,8 @@ void TSSortedMesh::renderFog(S32 frame)
 
    // lock...
    bool lockArrays = dglDoesSupportCompiledVertexArray();
-   if (lockArrays)
-      glLockArraysEXT(0,vertCount);
+   // if (lockArrays)
+      // glLockArraysEXT(0,vertCount);
 
    Cluster * cluster;
    S32 nextCluster = startCluster[frame];
@@ -170,8 +170,8 @@ void TSSortedMesh::renderFog(S32 frame)
    } while (nextCluster>=0);
 
    // unlock...
-   if (lockArrays)
-      glUnlockArraysEXT();
+   // if (lockArrays)
+      // glUnlockArraysEXT();
 }
 
 //-----------------------------------------------------

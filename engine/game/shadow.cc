@@ -566,8 +566,8 @@ void Shadow::render()
 
    bool lockArrays = dglDoesSupportCompiledVertexArray();
 
-   if (lockArrays)
-      glLockArraysEXT(0,mPartitionVerts.size());
+   // if (lockArrays)
+   //    glLockArraysEXT(0,mPartitionVerts.size());
 
    // fight z-fighting
    glEnable(GL_POLYGON_OFFSET_FILL);
@@ -578,8 +578,8 @@ void Shadow::render()
       glDrawArrays(GL_POLYGON,mPartition[i].vertexStart,mPartition[i].vertexCount);
 
    //
-   if (lockArrays)
-      glUnlockArraysEXT();
+   // if (lockArrays)
+      // glUnlockArraysEXT();
    glPopMatrix();
 
    // reset gl enviromnet
