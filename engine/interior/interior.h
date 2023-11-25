@@ -441,7 +441,7 @@ public:
       S32 N;
       S32 B;
 
-      TexMatrix::TexMatrix() { T = -1; N = -1; B = -1; };
+      TexMatrix(): T(-1), N(-1), B(-1) { };
    };
       
    struct Edge
