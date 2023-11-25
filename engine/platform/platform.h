@@ -18,6 +18,8 @@
 #  include "platform/platformAssert.h"
 #endif
 
+#include <new>
+
 //#define TORQUE_DISABLE_MEMORY_MANAGER
 
 //------------------------------------------------------------------------------
@@ -553,7 +555,7 @@ namespace Memory
    void validate();
 } // namespace Memory
 
-extern void* FN_CDECL operator new(dsize_t size, void* ptr);
+// extern void* FN_CDECL operator new(dsize_t size, void* ptr);
 
 template <class T>
 inline T* constructInPlace(T* p)
@@ -578,7 +580,7 @@ inline void destructInPlace(T* p)
    extern void* FN_CDECL operator new[](dsize_t size, const char*, const U32);
    extern void  FN_CDECL operator delete(void* ptr);
    extern void  FN_CDECL operator delete[](void* ptr);
-   #define new new(__FILE__, __LINE__)
+   // #define new new(__FILE__, __LINE__)
 #endif
 
 #define placenew(x) new(x)
